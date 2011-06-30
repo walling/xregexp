@@ -1,6 +1,8 @@
 
-This is [XRegExp](http://xregexp.com) in a Common JS module. I'm not affiliated
-with Steven Levithan, the author of XRegExp.
+This is [XRegExp](http://xregexp.com) in a Common JS module. All plugins and
+unicode packages are included as well. I'm not affiliated with Steven Levithan,
+the author of XRegExp.
+
 
 Installation
 ------------
