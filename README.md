@@ -33,7 +33,7 @@ For CoffeeScripters:
     
     console.log 'Héllö Wôrld'.match XRegExp '\\p{L}+'
     
-    var date = XRegExp '''
+    date = XRegExp '''
       (?<year>  [0-9]{4})  -?  # year
       (?<month> [0-9]{2})  -?  # month
       (?<day>   [0-9]{2})      # day
