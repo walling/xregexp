@@ -1,0 +1,17 @@
+{
+  "name" : "xregexp",
+  "version" : "1.5.0",
+  "description" : "The one of a kind JavaScript regular expression library.",
+  "author": "Steven Levithan <steves_list@hotmail.com>",
+  "contributors": [
+    { "name": "Bjarke Walling", "email": "bwp@bwp.dk" }
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/walling/xregexp.git" 
+  },
+  "main": "./index.js",
+  "engines" : {
+    "node" : ">= 0.4.0"
+  }
+}
