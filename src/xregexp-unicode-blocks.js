@@ -1,12 +1,14 @@
 /*
-XRegExp Unicode plugin pack: Blocks 1.0
-(c) 2010 Steven Levithan
+XRegExp Unicode plugin pack: Blocks 1.1
+(c) 2010-2012 Steven Levithan
 MIT License
 <http://xregexp.com>
-Uses the Unicode 5.2 character database
 
-This package for the XRegExp Unicode plugin enables the 150 Unicode 5.2 blocks in the Basic
-Multilinguial Plane (U+0000-U+FFFF). JavaScript does not support code points outside this range.
+Uses the Unicode 6.1 character database:
+<http://unicode.org/Public/6.1.0/ucd/Blocks.txt>
+
+This package for the XRegExp Unicode plugin enables the 156 Unicode 6.1 blocks
+in the Basic Multilingual Plane (U+0000-U+FFFF).
 
 Unicode blocks use the prefix "In". Example usage:
 
@@ -41,6 +43,8 @@ XRegExp.addUnicodePackage({
 	InThaana: "0780-07BF",
 	InNKo: "07C0-07FF",
 	InSamaritan: "0800-083F",
+	InMandaic: "0840-085F",
+	InArabic_Extended_A: "08A0-08FF",
 	InDevanagari: "0900-097F",
 	InBengali: "0980-09FF",
 	InGurmukhi: "0A00-0A7F",
@@ -78,8 +82,10 @@ XRegExp.addUnicodePackage({
 	InTai_Tham: "1A20-1AAF",
 	InBalinese: "1B00-1B7F",
 	InSundanese: "1B80-1BBF",
+	InBatak: "1BC0-1BFF",
 	InLepcha: "1C00-1C4F",
 	InOl_Chiki: "1C50-1C7F",
+	InSundanese_Supplement: "1CC0-1CCF",
 	InVedic_Extensions: "1CD0-1CFF",
 	InPhonetic_Extensions: "1D00-1D7F",
 	InPhonetic_Extensions_Supplement: "1D80-1DBF",
@@ -155,6 +161,8 @@ XRegExp.addUnicodePackage({
 	InCham: "AA00-AA5F",
 	InMyanmar_Extended_A: "AA60-AA7F",
 	InTai_Viet: "AA80-AADF",
+	InMeetei_Mayek_Extensions: "AAE0-AAFF",
+	InEthiopic_Extended_A: "AB00-AB2F",
 	InMeetei_Mayek: "ABC0-ABFF",
 	InHangul_Syllables: "AC00-D7AF",
 	InHangul_Jamo_Extended_B: "D7B0-D7FF",
@@ -174,4 +182,6 @@ XRegExp.addUnicodePackage({
 	InHalfwidth_and_Fullwidth_Forms: "FF00-FFEF",
 	InSpecials: "FFF0-FFFF"
 });
+
+// Excludes 64 Unicode 6.1 blocks outside the BMP.
 

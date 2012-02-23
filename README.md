@@ -42,16 +42,24 @@ For CoffeeScripters:
     console.log match.day if match
 
 
+Changelog
+---------
+
+This is Steven Levithan's own words.
+
+ *  1.5.1: Several bugs fixed and updated to use Unicode 6.1 character database (instead of 5.2).
+
+
 License
 -------
 
 This project includes the software packages:
 
- *  XRegExp 1.5.0
- *  XRegExp Unicode plugin base 0.5
- *  XRegExp Unicode plugin pack: Categories 1.0
- *  XRegExp Unicode plugin pack: Scripts 1.0
- *  XRegExp Unicode plugin pack: Blocks 1.0
+ *  XRegExp 1.5.1
+ *  XRegExp Unicode plugin base 0.6
+ *  XRegExp Unicode plugin pack: Categories 1.1
+ *  XRegExp Unicode plugin pack: Scripts 1.1
+ *  XRegExp Unicode plugin pack: Blocks 1.1
  *  XRegExp Match Recursive plugin 0.1.1
 
 The software is released under the MIT license:

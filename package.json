@@ -1,6 +1,6 @@
 {
   "name" : "xregexp",
-  "version" : "1.5.0",
+  "version" : "1.5.1",
   "description" : "The one of a kind JavaScript regular expression library.",
   "author": "Steven Levithan <steves_list@hotmail.com>",
   "contributors": [
