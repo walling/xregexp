@@ -10,4 +10,11 @@ done
 echo '' >> index.js
 echo '/***** Export as Common JS module *****/' >> index.js
 echo '' >> index.js
-echo 'module.exports = XRegExp;' >> index.js
+echo '
+if (typeof module === "object" && module.exports) {
+	XRegExp.XRegExp = XRegExp; // to support the new way
+	module.exports = XRegExp;
+} else if (typeof exports !== "undefined") {
+	exports.XRegExp = XRegExp;
+}
+' >> index.js

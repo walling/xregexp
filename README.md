@@ -1,7 +1,11 @@
 
-This is [XRegExp](http://xregexp.com) in a Common JS module. All plugins and
-unicode packages are included as well. I'm not affiliated with Steven Levithan,
-the author of XRegExp.
+This is [XRegExp](http://xregexp.com) in a Common JS module. All plugins and unicode packages are included as well. I'm not affiliated with Steven Levithan, the author of XRegExp.
+
+
+If you already use this module
+------------------------------
+
+The next major release of this module on NPM only accepts `require('xregexp').XRegExp` when including. Currently you can do both this and the old way of `require('xregexp')`. Please change your code to use the new method.
 
 
 Installation
@@ -15,7 +19,7 @@ Usage example
 
 For JavaScripters:
 
-    var XRegExp = require('xregexp');
+    var XRegExp = require('xregexp').XRegExp;
     
     console.log('Héllö Wôrld'.match(XRegExp('\\p{L}+')));
     
@@ -29,7 +33,7 @@ For JavaScripters:
 
 For CoffeeScripters:
 
-    XRegExp = require 'xregexp'
+    {XRegExp} = require 'xregexp'
     
     console.log 'Héllö Wôrld'.match XRegExp '\\p{L}+'
     
@@ -45,8 +49,7 @@ For CoffeeScripters:
 Changelog
 ---------
 
-This is Steven Levithan's own words.
-
+ *  1.5.2: Updated to support require("xregexp").XRegExp, which is the future method.
  *  1.5.1: Several bugs fixed and updated to use Unicode 6.1 character database (instead of 5.2).
 
 

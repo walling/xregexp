@@ -1298,4 +1298,11 @@ XRegExp.addUnicodePackage({
 
 /***** Export as Common JS module *****/
 
-module.exports = XRegExp;
+
+if (typeof module === "object" && module.exports) {
+	XRegExp.XRegExp = XRegExp; // to support the new way
+	module.exports = XRegExp;
+} else if (typeof exports !== "undefined") {
+	exports.XRegExp = XRegExp;
+}
+
