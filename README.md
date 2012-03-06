@@ -19,31 +19,35 @@ Usage example
 
 For JavaScripters:
 
-    var XRegExp = require('xregexp').XRegExp;
-    
-    console.log('Héllö Wôrld'.match(XRegExp('\\p{L}+')));
-    
-    var date = XRegExp('(?<year>  [0-9]{4})  -?  # year  \n\
-                        (?<month> [0-9]{2})  -?  # month \n\
-                        (?<day>   [0-9]{2})      # day   ', 'x');
-    var match = date.exec('2011-06-30');
-    if (match) {
-      console.log(match.day);
-    }
+```javascript
+var XRegExp = require('xregexp').XRegExp;
+
+console.log('Héllö Wôrld'.match(XRegExp('\\p{L}+')));
+
+var date = XRegExp('(?<year>  [0-9]{4})  -?  # year  \n\
+                    (?<month> [0-9]{2})  -?  # month \n\
+                    (?<day>   [0-9]{2})      # day   ', 'x');
+var match = date.exec('2011-06-30');
+if (match) {
+  console.log(match.day);
+}
+```
 
 For CoffeeScripters:
 
-    {XRegExp} = require 'xregexp'
-    
-    console.log 'Héllö Wôrld'.match XRegExp '\\p{L}+'
-    
-    date = XRegExp '''
-      (?<year>  [0-9]{4})  -?  # year
-      (?<month> [0-9]{2})  -?  # month
-      (?<day>   [0-9]{2})      # day
-    ''', 'x'
-    match = date.exec '2011-06-30'
-    console.log match.day if match
+```coffeescript
+{XRegExp} = require 'xregexp'
+
+console.log 'Héllö Wôrld'.match XRegExp '\\p{L}+'
+
+date = XRegExp '''
+  (?<year>  [0-9]{4})  -?  # year
+  (?<month> [0-9]{2})  -?  # month
+  (?<day>   [0-9]{2})      # day
+''', 'x'
+match = date.exec '2011-06-30'
+console.log match.day if match
+```
 
 
 Changelog
