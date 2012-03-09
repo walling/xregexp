@@ -53,6 +53,7 @@ console.log match.day if match
 Changelog
 ---------
 
+ *  1.5.3: Fixed problems with NPM package.
  *  1.5.2: Updated to support require("xregexp").XRegExp, which is the future method.
  *  1.5.1: Several bugs fixed and updated to use Unicode 6.1 character database (instead of 5.2).
 
