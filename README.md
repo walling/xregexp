@@ -1,17 +1,27 @@
 
-This is [XRegExp](http://xregexp.com) in a Common JS module. All plugins and unicode packages are included as well. I'm not affiliated with Steven Levithan, the author of XRegExp.
+This is [XRegExp](http://xregexp.com) in a Common JS module. All plugins and unicode packages are included as well. I'm not affiliated with [Steven Levithan](http://stevenlevithan.com), the author of XRegExp.
 
 
-If you already use this module
-------------------------------
+Deprecated
+----------
 
-The next major release of this module on NPM only accepts `require('xregexp').XRegExp` when including. Currently you can do both this and the old way of `require('xregexp')`. Please change your code to use the new method.
+If you use this module, then great, I hope you enjoy it! I just want to tell you that this project is deprecated. In some months it will be replaced by [XRegExp v2.0](https://github.com/slevithan/XRegExp). I invite you to look at it and start using it already, it's quite stable. I was basically just wrapping XRegExp 1.5.x to publish it on NPM. The author Steven Levithan is going to publish NPM packages from v2.0 onwards. You can [read the related discussion here](https://github.com/slevithan/XRegExp/issues/11).
+
+Be aware that the next release of this module on NPM only accepts `require('xregexp').XRegExp` when including, for CommonJS compliance. Currently you can do both this and the old way of `require('xregexp')`. Please change your code to use the new method.
+
+This is what Steven Levithan says about the [current XRegExp v2.0 beta](https://github.com/slevithan/XRegExp):
+
+> In the meantime, I recommend that any new projects use the latest beta versions of these packages available here on GitHub. All of the latest betas are now solid/stable enough that I strongly recommend them over the last stable versions (XRegExp v1.5.1, etc.). This is especially so because XRegExp v2.0.0 includes significant API changes. All changes are detailed in the [roadmap](https://github.com/slevithan/XRegExp/wiki/Roadmap) and in the extensive inline comments within the source files.
+
+*– Bjarke Walling, March 26, 2012*
 
 
 Installation
 ------------
 
-    npm install xregexp
+```bash
+npm install xregexp
+```
 
 
 Usage example
